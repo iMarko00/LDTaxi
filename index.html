@@ -1,206 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>LD Taxi</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/LDTaxi_logo_klein.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <!--Fürs Bilder sliden-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-<style>
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        max-width: 450px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        background: white;
-        padding: 8px;
-        outline: none;
-        color: black;
-    }
-
-    input:focus,
-    textarea:focus {
-        outline: none;
-        border-color: black;
-    }
-
-    input[name="text"] {
-    height: 100px;
-    }
-
-    button {
-        margin-left: auto;
-        padding: 14px 28px;
-    }
-
-    input,
-    textarea,
-    button {
-        border-radius: 5px;
-        border: 2px solid var(--bs-yellow);
-    }
-
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0E0E10">
+<meta name="description" content="LD Taxi im Bezirk Korneuburg: Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst. Rund um die Uhr erreichbar unter 0664 7991229.">
+<title>LD Taxi · Taxi im Bezirk Korneuburg · 24/7</title>
+<link rel="icon" href="assets/img/LDTaxi_logo_klein.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/redesign.css?v=20261030-2">
+<script src="js/translate.js?v=20261030-2" defer></script>
 </head>
-
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/LD_Taxi_transparent.png" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse langs" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link servicesMenuText" href="#services">Dienstleistungen</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link kontakt" href="#contact" lng-tag="">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link impressum" href="impressum.html" lng-tag="">Impressum</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-lng active" href="#" Language="deutsch">DE</a></li>
-                    <li class="nav-item">
-                            <a class="nav-lng" href="#" Language="englisch">EN</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-            <div class="masthead-subheading willkommen" lng-tag="willkommen">LD Taxi</div>
-            <div class="masthead-heading2 text-uppercase willkommensText1">Sie kennen das Ziel.</div>
-            <div class="masthead-heading text-uppercase willkommensText2">Wir kennen den Weg!</div>
-    </header>
-        
-    <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase services2">Dienstleistungen</h2>
-                <h3 class="section-subheading2 text-muted servicesDescriptionText1">Wir wissen, dass Transportbedürfnisse keine Uhrzeiten kennen.</h3>
-                <h3 class="section-subheading3 text-muted servicesDescriptionText2">Verlassen Sie sich daher 24/7 auf LD Taxi für Ihre Fahrten.</h3>
-                <span class="phone-icon">&#x260E;</span>
-                <a href="tel:06647991229" class="telefonnummer text-lowercase">
-                    0664 7991229
-                </a>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/services/singleTrips.svg" width="100" height="200">
-                    </span>
-                    <h4 class="my-3 einzelfahrtenTitel">Einzelfahrten</h4>
-                    <p class="text-muted einzelfahrtenDescription1"></p>
-                    <p class="text-muted einzelfahrtenDescription2">Unser Einzelfahrten-Service ist darauf ausgerichtet, Ihre Mobilität so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung.<br>
-                        Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/services/air-ticket-icon.svg" width="100" height="350">
-                    </span>
-                    <h4 class="my-3 flughafentransferTitel">Flughafentransfer</h4>
-                    <p class="text-muted flughafentransferDescription1">Von Wien bis Salzburg, LD Taxi bietet Ihnen problemlose Flughafentransfers zu den wichtigsten Flughäfen in Österreich. Beginnen oder beenden Sie Ihre Reise in Österreich stressfrei mit unseren komfortablen und bequemen Flughafentransfers.</p>
-                    <p class="text-muted flughafentransferDescription2"></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/services/passanger-van-icon.svg" width="100" height="350">
-                    </span>
-                    <h4 class="my-3 shuttleserviceTitel">Shuttleservice</h4>
-                    <p class="text-muted shuttleserviceDescription1"></p>
-                    <p class="text-muted shuttleserviceDescription2">Wenn Sie an einer Veranstaltung teilnehmen oder eine organisieren, können Sie sich auf LD Taxi verlassen. Unser Shuttle-Service steht Ihnen zur Verfügung, um Sie und Ihre Gäste zu befördern.<br>
-                    Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/services/delivery-truck-icon.svg" width="100" height="350">
-                    </span>
-                    <h4 class="my-3 botendienstTitel">Botendienst</h4>
-                    <p class="text-muted botendienst">Sie haben Pakete oder Dokumente die Sie von A nach B transportieren müssen? Wir bieten die perfekte Lösung mit unserem professionellem Botendienst.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/services/euro-price-list-icon.svg" width="80" height="350">
-                    </span>
-                    <h4 class="my-3 rechnungsfahrtenTitel">Rechnungsfahrten</h4>
-                    <p class="text-muted rechnungsfahrtenDescription">Firmen können Rechnungsfahrten bei LD Taxi buchen, um pünktlich an ihr Ziel zu gelangen. Die Kosten werden später Ihrer Firma in Rechnung gestellt. Buchen Sie rechtzeitig für eine stressfreie Fahrt.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase kontaktFormularTitel">Kontaktieren Sie Uns</h2>
-                <h3 class="section-subheading text-muted"></h3>
-            </div>
-
-            <body>
-                <form action="https://formsubmit.co/info@ldtaxi.net" method="POST">
-                    <input class="namensEingabe" type="name" name="name" placeholder="&#xf2bd; Namen eingeben" style="font-family:Arial, FontAwesome" required>
-                    <input class="telefonnummerEingabe" type="phone" name="Telefonnummer" placeholder="&#xf098; Telefonnummer eingeben" style="font-family:Arial, FontAwesome" required>
-                    <input class="emailEingabe" type="email" name="email" placeholder="&#xf0e0; Email eingeben" style="font-family:Arial, FontAwesome" required>
-                    <textarea class="anfrageEingabe" type="text" name="text" rows="8" cols="10" wrap="soft" maxlength="300" style="overflow:hidden" placeholder="Schreiben Sie uns hier Ihre Anfrage"></textarea>
-                    <button class="sendenButton" type="submit">Senden</button>
-                </form>
-             </body>
-    </section>
-           
-    <footer class="footer py-4 footer-line2">
-        <div class="container">
-            <div class="row align-items-center" style="color: white">
-                <a class="link-dark text-decoration-none me-3" >Copyright &copy; LD Taxi 2023</a>
-                <a class="link-dark text-decoration-none me-3" >Taxi im Bezirk Korneuburg</a>
-                <a class="link-dark text-decoration-none me-3" href="impressum.html">Impressum</a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-<script src="js/translate.js"></script> 
+<body id="top">
+<a data-i18n="skip" class="skip-link" href="#main">Zum Inhalt</a>
+<header class="site-header container">
+<a class="brand" href="#top" aria-label="LD Taxi – Startseite" data-i18n-aria="homeLabel"><span class="brand-badge">LD</span><span>Taxi</span></a>
+<div class="header-actions"><nav aria-label="Hauptnavigation" data-i18n-aria="navLabel"><a data-i18n="navServices" href="#leistungen">Leistungen</a><a data-i18n="contact" href="#kontakt">Kontakt</a></nav><a class="button primary header-call" href="tel:+436647991229"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span data-i18n="call" >Anrufen</span></a></div>
+</header>
+<main id="main">
+<section class="hero section"><div class="container hero-grid">
+<div class="hero-copy"><p class="region"><span class="status-dot" aria-hidden="true"></span><span data-i18n="region" >Taxi im Bezirk Korneuburg</span></p><h1><span data-i18n="heroFirst" >Sie kennen das Ziel.</span><br><span data-i18n="heroSecond" class="accent">Wir kennen den Weg!</span></h1><p data-i18n="heroText" class="hero-description">Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst – rund um die Uhr für Sie unterwegs.</p><div class="hero-actions"><a class="button primary" href="tel:+436647991229"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span data-i18n="callNow" >Jetzt Taxi rufen</span></a><a class="button outline" href="#kontakt"><span data-i18n="request" >Fahrt anfragen</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+<div class="road-panel"><svg viewBox="0 0 480 560" preserveAspectRatio="xMidYMid slice" class="road-art" aria-hidden="true">
+<rect width="480" height="560" fill="#131317"></rect>
+<g stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2" fill="none">
+<path d="M240 200 L-80 560"></path>
+<path d="M240 200 L90 560"></path>
+<path d="M240 200 L390 560"></path>
+<path d="M240 200 L560 560"></path>
+</g>
+<path d="M240 200 L240 560" stroke="#FFC800" stroke-width="4" stroke-dasharray="12 20" fill="none"></path>
+<g fill="none" stroke-linecap="round">
+<path d="M240 200 C 205 300, 130 420, 50 560" stroke="#FFC800" stroke-opacity="0.55" stroke-width="3"></path>
+<path d="M240 200 C 232 330, 196 450, 176 560" stroke="#FFC800" stroke-opacity="0.9" stroke-width="5"></path>
+<path d="M240 200 C 276 300, 350 420, 430 560" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="3"></path>
+<path d="M240 200 C 250 330, 292 450, 316 560" stroke="#FFFFFF" stroke-opacity="0.8" stroke-width="5"></path>
+</g>
+<g fill="#FFC800">
+<circle cx="70" cy="178" r="12" fill-opacity="0.14"></circle><circle cx="70" cy="178" r="3.5"></circle>
+<circle cx="140" cy="190" r="10" fill-opacity="0.14"></circle><circle cx="140" cy="190" r="3"></circle>
+<circle cx="340" cy="190" r="10" fill-opacity="0.14"></circle><circle cx="340" cy="190" r="3"></circle>
+<circle cx="410" cy="178" r="12" fill-opacity="0.14"></circle><circle cx="410" cy="178" r="3.5"></circle>
+<circle cx="240" cy="200" r="16" fill-opacity="0.18"></circle><circle cx="240" cy="200" r="5"></circle>
+</g>
+<path d="M0 200 L480 200" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"></path>
+</svg><p class="availability"><span data-i18n="available" >24/7 erreichbar</span></p><div class="booking-card"><div><span data-i18n="order" class="booking-label">Taxi bestellen</span><a class="booking-number" href="tel:+436647991229">0664 7991229</a></div><a class="round-call" href="tel:+436647991229" aria-label="Anrufen" data-i18n-aria="call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a></div></div>
+</div></section>
+<div class="checker" aria-hidden="true"></div>
+<section class="section services" id="leistungen"><div class="container"><div class="services-intro"><div><p data-i18n="services" class="eyebrow">Dienstleistungen</p><h2 data-i18n="servicesHeading" >Fünf Wege, ans Ziel zu kommen.</h2></div><p data-i18n="servicesIntro" class="intro-copy">Wir wissen, dass Transportbedürfnisse keine Uhrzeiten kennen. Verlassen Sie sich daher 24/7 auf LD Taxi für Ihre Fahrten.</p></div><div class="service-grid"><article class="service-card featured"><div class="card-top"><span class="icon-tile"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.6 5H8.4a2 2 0 0 0-1.9 1.3L5 10 3 8"></path><rect width="18" height="8" x="3" y="10" rx="2"></rect><path d="M7 14h.01M17 14h.01M5 18v2M19 18v2"></path></svg></span><span class="index">01</span></div><h3 data-i18n="service1" >Einzelfahrten</h3><p data-i18n="description1" >Bequem von A nach B – ob zum wichtigen Geschäftstermin oder einfach sicher nach Hause. Wir stehen Ihnen zur Verfügung.</p></article><article class="service-card "><div class="card-top"><span class="icon-tile"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span><span class="index">02</span></div><h3 data-i18n="service2" >Flughafentransfer</h3><p data-i18n="description2" >Von Wien bis Salzburg: Transfers zu den wichtigsten Flughäfen Österreichs. Beginnen oder beenden Sie Ihre Reise stressfrei.</p></article><article class="service-card "><div class="card-top"><span class="icon-tile"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6M15 6v6M2 12h19.6M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3M9 18h5"></path><circle cx="7" cy="18" r="2"></circle><circle cx="16" cy="18" r="2"></circle></svg></span><span class="index">03</span></div><h3 data-i18n="service3" >Shuttleservice</h3><p data-i18n="description3" >Bei Veranstaltungen sind wir da: Wir befördern Sie und Ihre Gäste – ob Sie teilnehmen oder selbst organisieren.</p></article><article class="service-card "><div class="card-top"><span class="icon-tile"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5M12 22V12"></path></svg></span><span class="index">04</span></div><h3 data-i18n="service4" >Botendienst</h3><p data-i18n="description4" >Pakete oder Dokumente von A nach B? Dafür haben wir den professionellen Botendienst.</p></article><article class="service-card "><div class="card-top"><span class="icon-tile"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 17.5v-11"></path></svg></span><span class="index">05</span></div><h3 data-i18n="service5" >Rechnungsfahrten</h3><p data-i18n="description5" >Firmen buchen bei LD Taxi und bekommen die Kosten später in Rechnung gestellt. Rechtzeitig buchen für eine stressfreie Fahrt.</p></article></div></div></section>
+<section class="section benefits"><div class="container"><h2 data-i18n="whyHeading" >Rund um die Uhr. Ohne Umwege.</h2><div class="benefit-grid"><div><p class="stat">24/7</p><p data-i18n="hoursText" >Transportbedürfnisse kennen keine Uhrzeiten. Wir auch nicht – Tag und Nacht für Sie erreichbar.</p></div><div><p data-i18n="airports" class="stat">Wien–Salzburg</p><p data-i18n="airportsText" >Flughafentransfers zu den wichtigsten Flughäfen Österreichs, komfortabel und bequem.</p></div><div><p data-i18n="invoice" class="stat">Auf Rechnung</p><p data-i18n="invoiceText" >Für Firmen: Fahrten buchen, pünktlich ankommen und später bequem per Rechnung bezahlen.</p></div></div></div></section>
+<section class="section contact" id="kontakt"><div class="container contact-grid"><div class="contact-copy"><p data-i18n="contact" class="eyebrow">Kontakt</p><h2 data-i18n="contactHeading" >Kontaktieren Sie uns.</h2><p data-i18n="contactText" class="intro-copy">Rufen Sie einfach an oder senden Sie uns Ihre Anfrage. Wir planen Ihre nächste Fahrt.</p><a class="contact-number" href="tel:+436647991229"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>0664 7991229</span></a><p data-i18n="contactNote" class="contact-note">24/7 erreichbar · Taxi im Bezirk Korneuburg</p></div>
+<form action="https://formsubmit.co/info@ldtaxi.net" method="POST" aria-label="Fahrt anfragen" data-i18n-aria="formLabel"><input type="hidden" name="_subject" value="LD Taxi – Fahrtanfrage"><div class="form-grid"><div class="field "><label data-i18n="name" for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div><div class="field "><label data-i18n="telephone" for="telephone">Telefon</label><input id="telephone" name="telephone" type="tel" autocomplete="tel" required></div><div class="field wide"><label data-i18n="email" for="email">E-Mail</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field "><label data-i18n="pickup" for="pickup">Abholort</label><input id="pickup" name="pickup" type="text" autocomplete="off" ></div><div class="field "><label data-i18n="destination" for="destination">Ziel</label><input id="destination" name="destination" type="text" autocomplete="off" ></div><div class="field wide"><label data-i18n="message" for="message">Nachricht</label><textarea id="message" name="message" rows="4" maxlength="3000"></textarea></div></div><button class="button dark" type="submit"><span data-i18n="send" >Anfrage senden</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><p data-i18n="formNote" class="form-note">Mit dem Senden wird Ihre Anfrage über FormSubmit übermittelt. Eine Fahrt ist erst nach unserer Bestätigung gebucht.</p></form>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><p data-i18n="footer" >© LD Taxi · Taxi im Bezirk Korneuburg</p><div class="footer-links"><a data-i18n="legal" href="impressum.html">Impressum</a><div class="language-switch" role="group" aria-label="Sprache wählen" data-i18n-aria="languageLabel"><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="true">DE</button><span aria-hidden="true">/</span><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button></div></div></div></footer>
+<div class="mobile-call"><a class="button primary" href="tel:+436647991229"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E10" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span data-i18n="callNow" >Jetzt Taxi rufen</span></a></div>
 </body>
-
 </html>

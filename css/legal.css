@@ -1,0 +1,19 @@
+/* Legal page layout. Shared colors, typography and navigation come from redesign.css. */
+.legal-page { min-height: 100svh; display: flex; flex-direction: column; padding-bottom: 0; }
+.legal-page main { flex: 1; background: var(--paper); }
+.legal-heading { background: var(--ink); padding-top: clamp(32px, 5vw, 64px); padding-bottom: clamp(48px, 6vw, 80px); }
+.legal-heading h1 { font-size: clamp(44px, 6vw, 80px); color: var(--accent); overflow-wrap: anywhere; }
+.back-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-bottom: 24px; color: var(--muted-on-dark); font-size: 15px; }
+.back-link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.legal-content { color: var(--ink); color-scheme: light; }
+.legal-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 56px; }
+.legal-layout h2 { max-width: 22ch; font-size: clamp(28px, 3.5vw, 44px); line-height: 1.1; overflow-wrap: anywhere; }
+.company-details { margin: 0; border-top: 1px solid #c8c3b5; }
+.company-details > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 16px 28px; padding-block: 24px; border-bottom: 1px solid #c8c3b5; }
+.company-details dt { color: var(--muted-on-light); font-size: 16px; overflow-wrap: anywhere; }
+.company-details dd { margin: 0; font-weight: 500; overflow-wrap: anywhere; }
+.company-details address { font-style: normal; }
+.company-details a { display: inline-flex; align-items: center; min-height: 48px; min-width: 48px; padding-block: 8px; touch-action: manipulation; text-decoration: underline; text-decoration-color: #a39b82; }
+@media (hover: hover) { .back-link:hover { color: var(--accent); } .company-details a:hover { text-decoration-color: var(--ink); } }
+@media (max-width: 800px) { .legal-layout { grid-template-columns: minmax(0, 1fr); gap: 36px; } .legal-layout h2 { max-width: none; } }
+@media (max-width: 540px) { .company-details > div { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-block: 20px; } }

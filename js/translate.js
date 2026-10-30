@@ -1,133 +1,173 @@
-let langs = document.querySelector(".langs"),
-     link = document.querySelectorAll("a"),
-     servicesMenuText = document.querySelector(".servicesMenuText"),
-     portfolio = document.querySelector(".portfolio"),
-     kontakt = document.querySelector(".kontakt"),
-     impressum = document.querySelector(".impressum"),
-     willkommen = document.querySelector(".willkommen"),
-     willkommensText1 = document.querySelector(".willkommensText1");
-     willkommensText2 = document.querySelector(".willkommensText2");
-     telefonnummer = document.querySelector(".telefonnummer");
-     mehrErfahren = document.querySelector(".mehrErfahren");
-     services2 = document.querySelector(".services2");
-     servicesDescriptionText1 = document.querySelector(".servicesDescriptionText1");
-     servicesDescriptionText2 = document.querySelector(".servicesDescriptionText2");
-     einzelfahrtenTitel = document.querySelector(".einzelfahrtenTitel");
-     einzelfahrtenDescription1 = document.querySelector(".einzelfahrtenDescription1");
-     einzelfahrtenDescription2 = document.querySelector(".einzelfahrtenDescription2");
-     flughafentransferTitel = document.querySelector(".flughafentransferTitel");
-     flughafentransferDescription1 = document.querySelector(".flughafentransferDescription1");
-     flughafentransferDescription2 = document.querySelector(".flughafentransferDescription2");
-     shuttleserviceTitel = document.querySelector(".shuttleserviceTitel");
-     shuttleserviceDescription1 = document.querySelector(".shuttleserviceDescription1");
-     shuttleserviceDescription2 = document.querySelector(".shuttleserviceDescription2");
-     botendienst = document.querySelector(".botendienst");
-     botendienstTitel = document.querySelector(".botendienstTitel");
-     rechnungsfahrtenTitel = document.querySelector(".rechnungsfahrtenTitel");
-     rechnungsfahrtenDescription = document.querySelector(".rechnungsfahrtenDescription");
-     kontaktFormularTitel = document.querySelector(".kontaktFormularTitel");
-
-link.forEach(el=>{
-     el.addEventListener("click", ()=>{
-          langs.querySelector(".active").classList.remove("active");
-          el.classList.add("active");
-
-          let attr = el.getAttribute("language")
-
-          servicesMenuText.textContent = data[attr].servicesMenuText
-          kontakt.textContent = data[attr].kontakt
-          impressum.textContent = data[attr].impressum
-          willkommen.textContent = data[attr].willkommen
-          willkommensText1.textContent = data[attr].willkommensText1
-          willkommensText2.textContent = data[attr].willkommensText2
-          telefonnummer.textContent = data[attr].telefonnummer
-          services2.textContent = data[attr].services2
-          servicesDescriptionText1.textContent = data[attr].servicesDescriptionText1
-          servicesDescriptionText2.textContent = data[attr].servicesDescriptionText2
-          einzelfahrtenDescription1.textContent = data[attr].einzelfahrtenDescription1
-          einzelfahrtenTitel.textContent = data[attr].einzelfahrtenTitel
-          einzelfahrtenDescription2.textContent = data[attr].einzelfahrtenDescription2
-          flughafentransferTitel.textContent = data[attr].flughafentransferTitel
-          flughafentransferDescription1.textContent = data[attr].flughafentransferDescription1
-          flughafentransferDescription2.textContent = data[attr].flughafentransferDescription2
-          shuttleserviceTitel.textContent = data[attr].shuttleserviceTitel
-          shuttleserviceDescription1.textContent = data[attr].shuttleserviceDescription1
-          shuttleserviceDescription2.textContent = data[attr].shuttleserviceDescription2
-          botendienstTitel.textContent = data[attr].botendienstTitel
-          botendienst.textContent = data[attr].botendienst
-          rechnungsfahrtenTitel.textContent = data[attr].rechnungsfahrtenTitel
-          rechnungsfahrtenDescription.textContent = data[attr].rechnungsfahrtenDescription
-          kontaktFormularTitel.textContent = data[attr].kontaktFormularTitel
-     })
-})
-
-let data = {
-    deutsch: {
-        servicesMenuText: "Dienstleistungen",
-        portfolio: "Portfolio",
-        kontakt: "Kontakt",
-        impressum: "Impressum",
-        willkommen: "LD Taxi",
-        willkommensText1: "Sie kennen das Ziel.",
-        willkommensText2: "Wir kennen den Weg!",
-        telefonnummer: "0664 7991229",
-        mehrErfahren: "Mehr erfahren",
-        services2: "Dienstleistungen",
-        servicesDescriptionText1: "Wir wissen, dass Transportbedürfnisse keine Uhrzeiten kennen.",
-        servicesDescriptionText2: "Verlassen Sie sich daher 24/7 auf LD Taxi für Ihre Fahrten.",
-
-        einzelfahrtenTitel: "Einzelfahrten",
-        einzelfahrtenDescription1: "",
-        einzelfahrtenDescription2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
-
-        flughafentransferTitel: "Flughafentransfer",
-        flughafentransferDescription1: "Von Wien bis Salzburg, LD Taxi bietet Ihnen problemlose Flughafentransfers zu den wichtigsten Flughäfen in Österreich. Beginnen oder beenden Sie Ihre Reise in Österreich stressfrei mit unseren komfortablen und bequemen Flughafentransfers.",
-        flughafentransferDescription2: "",
-
-        shuttleserviceTitel: "Shuttleservice",
-        shuttleserviceDescription1: "Wenn Sie an einer Veranstaltung teilnehmen oder eine organisieren, können Sie sich auf LD Taxi verlassen. Unser Shuttle-Service steht Ihnen zur Verfügung, um Sie und Ihre Gäste zu befördern.",
-        shuttleserviceDescription2: "",
-        
-        botendienstTitel: "Botendienst",
-        botendienst: "Sie haben Pakete oder Dokumente die Sie von A nach B transportieren müssen? Wir bieten die perfekte Lösung mit unserem professionellem Botendienst.",
-
-        rechnungsfahrtenTitel: "Rechnungsfahrten",
-        rechnungsfahrtenDescription: "Firmen können Rechnungsfahrten bei LD Taxi buchen, um pünktlich an ihr Ziel zu gelangen. Die Kosten werden später Ihrer Firma in Rechnung gestellt. Buchen Sie rechtzeitig für eine stressfreie Fahrt.",
-
-        kontaktFormularTitel: "Kontaktieren Sie Uns",
-    },
-    englisch: {
-        servicesMenuText: "Services",
-        portfolio: "Portfolio",
-        kontakt: "Contact",
-        impressum: "Impressum",
-        willkommen: "LD Taxi",
-        willkommensText1: "YOUR DESTINATION.",
-        willkommensText2: "OUR EXPERTISE!",
-        telefonnummer: "0664 7991229",
-        mehrErfahren: "Tell me more",
-        services2: "Services",
-        servicesDescriptionText1: "We understand that transportation needs have no time constraints.",
-        servicesDescriptionText2: "Therefore, rely on LD Taxi 24/7 for your rides.",
-
-        einzelfahrtenTitel: "Single Trips",
-        einzelfahrtenDescription1: "",
-        einzelfahrtenDescription2: "Our private transportation service is designed to make your mobility as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
-
-        flughafentransferTitel: "Airporttransfers",
-        flughafentransferDescription1: "From Vienna to Salzburg, LD Taxi offers you hassle-free airport transfers to the main airports in Austria. Start or end your trip in Austria stress-free with our comfortable and convenient airport transfers.",
-        flughafentransferDescription2: "",
-
-        shuttleserviceTitel: "Shuttleservice",
-        shuttleserviceDescription1: "If you are attending or organizing an event, you can rely on LD Taxi. Our shuttle service is at your disposal to transport you and your guests.",
-        shuttleserviceDescription2: "",
-        
-        botendienstTitel: "Courier Service",
-        botendienst: "You have packages or documents that you need to transport from A to B? We offer the perfect solution with our professional courier service.",
-
-        rechnungsfahrtenTitel: "For Companies",
-        rechnungsfahrtenDescription: "Companies can book rides with LD Taxi to get to their destination on time. The costs will be invoiced to your company later. Book upfront for a stress-free journey",
-
-        kontaktFormularTitel: "Contact Us",
+/* Shared copy and language selection. No link or form behavior is intercepted. */
+(() => {
+  'use strict';
+  const messages = {
+  "de": {
+    "navServices": "Leistungen",
+    "backHome": "Zur Startseite",
+    "companyInfo": "Unternehmen",
+    "companyName": "Firmenname",
+    "companyActivity": "Unternehmensgegenstand",
+    "transportCompany": "Transportunternehmen",
+    "companyAddress": "Firmensitz",
+    "legalTitle": "Impressum · LD Taxi",
+    "legalMeta": "Impressum von LD Taxi: Firmeninformationen, Anschrift und Kontakt in Korneuburg.",
+    "contact": "Kontakt",
+    "call": "Anrufen",
+    "region": "Taxi im Bezirk Korneuburg",
+    "heroFirst": "Sie kennen das Ziel.",
+    "heroSecond": "Wir kennen den Weg!",
+    "heroText": "Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst – rund um die Uhr für Sie unterwegs.",
+    "callNow": "Jetzt Taxi rufen",
+    "request": "Fahrt anfragen",
+    "available": "24/7 erreichbar",
+    "order": "Taxi bestellen",
+    "services": "Dienstleistungen",
+    "servicesHeading": "Fünf Wege, ans Ziel zu kommen.",
+    "servicesIntro": "Wir wissen, dass Transportbedürfnisse keine Uhrzeiten kennen. Verlassen Sie sich daher 24/7 auf LD Taxi für Ihre Fahrten.",
+    "service1": "Einzelfahrten",
+    "description1": "Bequem von A nach B – ob zum wichtigen Geschäftstermin oder einfach sicher nach Hause. Wir stehen Ihnen zur Verfügung.",
+    "service2": "Flughafentransfer",
+    "description2": "Von Wien bis Salzburg: Transfers zu den wichtigsten Flughäfen Österreichs. Beginnen oder beenden Sie Ihre Reise stressfrei.",
+    "service3": "Shuttleservice",
+    "description3": "Bei Veranstaltungen sind wir da: Wir befördern Sie und Ihre Gäste – ob Sie teilnehmen oder selbst organisieren.",
+    "service4": "Botendienst",
+    "description4": "Pakete oder Dokumente von A nach B? Dafür haben wir den professionellen Botendienst.",
+    "service5": "Rechnungsfahrten",
+    "description5": "Firmen buchen bei LD Taxi und bekommen die Kosten später in Rechnung gestellt. Rechtzeitig buchen für eine stressfreie Fahrt.",
+    "whyHeading": "Rund um die Uhr. Ohne Umwege.",
+    "hoursText": "Transportbedürfnisse kennen keine Uhrzeiten. Wir auch nicht – Tag und Nacht für Sie erreichbar.",
+    "airports": "Wien–Salzburg",
+    "airportsText": "Flughafentransfers zu den wichtigsten Flughäfen Österreichs, komfortabel und bequem.",
+    "invoice": "Auf Rechnung",
+    "invoiceText": "Für Firmen: Fahrten buchen, pünktlich ankommen und später bequem per Rechnung bezahlen.",
+    "contactHeading": "Kontaktieren Sie uns.",
+    "contactText": "Rufen Sie einfach an oder senden Sie uns Ihre Anfrage. Wir planen Ihre nächste Fahrt.",
+    "contactNote": "24/7 erreichbar · Taxi im Bezirk Korneuburg",
+    "name": "Name",
+    "telephone": "Telefon",
+    "email": "E-Mail",
+    "pickup": "Abholort",
+    "destination": "Ziel",
+    "message": "Nachricht",
+    "send": "Anfrage senden",
+    "footer": "© LD Taxi · Taxi im Bezirk Korneuburg",
+    "legal": "Impressum",
+    "skip": "Zum Inhalt",
+    "homeLabel": "LD Taxi – Startseite",
+    "navLabel": "Hauptnavigation",
+    "languageLabel": "Sprache wählen",
+    "formLabel": "Fahrt anfragen",
+    "formNote": "Mit dem Senden wird Ihre Anfrage über FormSubmit übermittelt. Eine Fahrt ist erst nach unserer Bestätigung gebucht.",
+    "title": "LD Taxi · Taxi im Bezirk Korneuburg · 24/7",
+    "meta": "LD Taxi im Bezirk Korneuburg: Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst. Rund um die Uhr erreichbar unter 0664 7991229."
+  },
+  "en": {
+    "navServices": "Services",
+    "backHome": "Back to home",
+    "companyInfo": "Company information",
+    "companyName": "Company name",
+    "companyActivity": "Business activity",
+    "transportCompany": "Transportation company",
+    "companyAddress": "Registered address",
+    "legalTitle": "Legal notice · LD Taxi",
+    "legalMeta": "LD Taxi legal notice: company information, address and contact details in Korneuburg.",
+    "contact": "Contact",
+    "call": "Call us",
+    "region": "Taxi in the Korneuburg district",
+    "heroFirst": "Your destination.",
+    "heroSecond": "Our expertise!",
+    "heroText": "Single trips, airport transfers, shuttle and courier services – on the road for you, around the clock.",
+    "callNow": "Call a taxi now",
+    "request": "Request a ride",
+    "available": "Available 24/7",
+    "order": "Book a taxi",
+    "services": "Our services",
+    "servicesHeading": "Five ways to get you there.",
+    "servicesIntro": "We understand that transportation needs have no time constraints. Rely on LD Taxi 24/7 for your rides.",
+    "service1": "Single trips",
+    "description1": "Get from A to B comfortably – whether you have an important business meeting or simply need a safe ride home. We’re here to help.",
+    "service2": "Airport transfers",
+    "description2": "From Vienna to Salzburg: transfers to Austria’s main airports. Start or end your journey without the stress.",
+    "service3": "Shuttle service",
+    "description3": "Count on us for your events. Our shuttle service transports you and your guests, whether you’re attending or organizing.",
+    "service4": "Courier service",
+    "description4": "Packages or documents that need to get from A to B? Our professional courier service has you covered.",
+    "service5": "For companies",
+    "description5": "Book your business trips with LD Taxi and have the costs invoiced to your company later. Book ahead for a stress-free journey.",
+    "whyHeading": "Around the clock. All the way.",
+    "hoursText": "Transportation needs have no time constraints. Neither do we – reach us day or night.",
+    "airports": "Vienna–Salzburg",
+    "airportsText": "Comfortable, convenient transfers to Austria’s main airports.",
+    "invoice": "By invoice",
+    "invoiceText": "For companies: book a ride, arrive on time, and conveniently pay by invoice later.",
+    "contactHeading": "Let’s plan your ride.",
+    "contactText": "Give us a call or send us your inquiry. We’ll help plan your next ride.",
+    "contactNote": "Available 24/7 · Taxi in the Korneuburg district",
+    "name": "Name",
+    "telephone": "Phone",
+    "email": "Email",
+    "pickup": "Pickup location",
+    "destination": "Destination",
+    "message": "Message",
+    "send": "Send inquiry",
+    "footer": "© LD Taxi · Taxi in the Korneuburg district",
+    "legal": "Legal notice",
+    "skip": "Skip to content",
+    "homeLabel": "LD Taxi – Home",
+    "navLabel": "Main navigation",
+    "languageLabel": "Choose language",
+    "formLabel": "Request a ride",
+    "formNote": "Your inquiry is sent through FormSubmit. Your ride is only booked once we confirm it.",
+    "title": "LD Taxi · Taxi in the Korneuburg district · 24/7",
+    "meta": "LD Taxi in the Korneuburg district: single trips, airport transfers, shuttle and courier services. Call us around the clock on +43 664 7991229."
+  }
+};
+  const storageKey = 'ldtaxi.language';
+  const supported = language => Object.hasOwn(messages, language);
+  function deviceLanguage() {
+    const preferences = navigator.languages?.length ? navigator.languages : [navigator.language || 'de'];
+    for (const locale of preferences) {
+      const language = locale.toLowerCase().split(/[-_]/)[0];
+      if (supported(language)) return language;
     }
-}
+    return 'de';
+  }
+  function savedLanguage() {
+    try {
+      const language = localStorage.getItem(storageKey);
+      return supported(language) ? language : null;
+    } catch { return null; }
+  }
+  function applyLanguage(language) {
+    const copy = messages[language];
+    document.documentElement.lang = language;
+    const isLegalPage = document.body.dataset.page === 'legal';
+    document.title = isLegalPage ? copy.legalTitle : copy.title;
+    document.querySelector('meta[name="description"]').content = isLegalPage ? copy.legalMeta : copy.meta;
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.dataset.i18n;
+      if (Object.hasOwn(copy, key)) element.textContent = copy[key];
+    });
+    document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+      element.setAttribute('aria-label', copy[element.dataset.i18nAria]);
+    });
+    document.querySelectorAll('[data-language]').forEach(button => {
+      button.setAttribute('aria-pressed', String(button.dataset.language === language));
+    });
+    const subject = document.querySelector('input[name="_subject"]');
+    if (subject) subject.value = language === 'de' ? 'LD Taxi – Fahrtanfrage' : 'LD Taxi – Ride inquiry';
+  }
+  document.querySelectorAll('[data-language]').forEach(button => {
+    button.addEventListener('click', () => {
+      const language = button.dataset.language;
+      if (!supported(language)) return;
+      try { localStorage.setItem(storageKey, language); } catch { /* Device selection still works without storage. */ }
+      applyLanguage(language);
+    });
+  });
+  window.addEventListener('languagechange', () => {
+    if (!savedLanguage()) applyLanguage(deviceLanguage());
+  });
+  applyLanguage(savedLanguage() || deviceLanguage());
+})();
