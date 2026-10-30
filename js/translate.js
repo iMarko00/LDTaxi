@@ -60,7 +60,8 @@
     "formLabel": "Fahrt anfragen",
     "formNote": "Mit dem Senden wird Ihre Anfrage über FormSubmit übermittelt. Eine Fahrt ist erst nach unserer Bestätigung gebucht.",
     "title": "LD Taxi · Taxi im Bezirk Korneuburg · 24/7",
-    "meta": "LD Taxi im Bezirk Korneuburg: Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst. Rund um die Uhr erreichbar unter 0664 7991229."
+    "meta": "LD Taxi im Bezirk Korneuburg: Einzelfahrten, Flughafentransfer, Shuttle- und Botendienst. Rund um die Uhr erreichbar unter 0664 7991229.",
+    "formSubject": "LD Taxi – Fahrtanfrage"
   },
   "en": {
     "navServices": "Services",
@@ -120,7 +121,130 @@
     "formLabel": "Request a ride",
     "formNote": "Your inquiry is sent through FormSubmit. Your ride is only booked once we confirm it.",
     "title": "LD Taxi · Taxi in the Korneuburg district · 24/7",
-    "meta": "LD Taxi in the Korneuburg district: single trips, airport transfers, shuttle and courier services. Call us around the clock on +43 664 7991229."
+    "meta": "LD Taxi in the Korneuburg district: single trips, airport transfers, shuttle and courier services. Call us around the clock on +43 664 7991229.",
+    "formSubject": "LD Taxi – Ride inquiry"
+  },
+  "sr": {
+    "navServices": "Услуге",
+    "backHome": "На почетну страницу",
+    "companyInfo": "Подаци о предузећу",
+    "companyName": "Назив предузећа",
+    "companyActivity": "Делатност",
+    "transportCompany": "Предузеће за превоз",
+    "companyAddress": "Седиште предузећа",
+    "legalTitle": "Подаци о предузећу · LD Taxi",
+    "legalMeta": "Подаци о предузећу LD Taxi: адреса и контакт у Корнојбургу.",
+    "contact": "Контакт",
+    "call": "Позовите нас",
+    "region": "Такси у округу Корнојбург",
+    "heroFirst": "Ви знате дестинацију.",
+    "heroSecond": "Ми знамо пут!",
+    "heroText": "Појединачне вожње, аеродромски трансфери, шатл и курирске услуге – на располагању смо вам даноноћно.",
+    "callNow": "Позовите такси",
+    "request": "Пошаљите упит",
+    "available": "Доступни 24/7",
+    "order": "Наручите такси",
+    "services": "Наше услуге",
+    "servicesHeading": "Пет начина до одредишта.",
+    "servicesIntro": "Знамо да потреба за превозом не зависи од доба дана. Ослоните се на LD Taxi за своје вожње, 24 сата дневно, седам дана у недељи.",
+    "service1": "Појединачне вожње",
+    "description1": "Удобно до одредишта – било да идете на важан пословни састанак или желите безбедно да стигнете кући. Ту смо за вас.",
+    "service2": "Аеродромски трансфери",
+    "description2": "Од Беча до Салцбурга: превоз до најважнијих аеродрома у Аустрији. Започните или завршите путовање без стреса.",
+    "service3": "Шатл превоз",
+    "description3": "Рачунајте на нас за превоз на догађаје: превозимо вас и ваше госте, било да сте учесник или организатор.",
+    "service4": "Курирске услуге",
+    "description4": "Треба да пошаљете пакет или документа? Наша професионална курирска служба обавиће доставу за вас.",
+    "service5": "Вожње за предузећа",
+    "description5": "Предузећа могу да резервишу вожње код LD Taxi и накнадно плате по рачуну. Резервишите на време за путовање без стреса.",
+    "whyHeading": "Даноноћно. Без заобилажења.",
+    "hoursText": "Превоз вам може затребати у било које доба. Зато смо доступни и дању и ноћу.",
+    "airports": "Беч–Салцбург",
+    "airportsText": "Удобан и практичан превоз до најважнијих аеродрома у Аустрији.",
+    "invoice": "По рачуну",
+    "invoiceText": "За предузећа: резервишите вожњу, стигните на време и накнадно платите по рачуну.",
+    "contactHeading": "Контактирајте нас.",
+    "contactText": "Позовите нас или нам пошаљите упит. Помоћи ћемо вам да испланирате следећу вожњу.",
+    "contactNote": "Доступни 24/7 · Такси у округу Корнојбург",
+    "name": "Име",
+    "telephone": "Телефон",
+    "email": "Е-пошта",
+    "pickup": "Место поласка",
+    "destination": "Дестинацију",
+    "message": "Порука",
+    "send": "Пошаљите упит",
+    "footer": "© LD Taxi · Такси у округу Корнојбург",
+    "legal": "Подаци о предузећу",
+    "skip": "Пређите на садржај",
+    "homeLabel": "LD Taxi – Почетна страница",
+    "navLabel": "Главна навигација",
+    "languageLabel": "Изаберите језик",
+    "formLabel": "Упит за вожњу",
+    "formNote": "Ваш упит се шаље путем сервиса FormSubmit. Вожња је резервисана тек након наше потврде.",
+    "title": "LD Taxi · Такси у округу Корнојбург · 24/7",
+    "meta": "LD Taxi у округу Корнојбург: појединачне вожње, аеродромски трансфери, шатл и курирске услуге. Доступни даноноћно на +43 664 7991229.",
+    "formSubject": "LD Taxi – Упит за вожњу"
+  },
+  "ru": {
+    "navServices": "Услуги",
+    "backHome": "На главную",
+    "companyInfo": "Информация о компании",
+    "companyName": "Название компании",
+    "companyActivity": "Вид деятельности",
+    "transportCompany": "Транспортная компания",
+    "companyAddress": "Юридический адрес",
+    "legalTitle": "Информация о компании · LD Taxi",
+    "legalMeta": "Информация о компании LD Taxi: адрес и контактные данные в Корнойбурге.",
+    "contact": "Контакты",
+    "call": "Позвонить",
+    "region": "Такси в округе Корнойбург",
+    "heroFirst": "Вы знаете цель.",
+    "heroSecond": "Мы знаем дорогу!",
+    "heroText": "Индивидуальные поездки, трансферы в аэропорт, шаттлы и курьерская доставка — к вашим услугам круглосуточно.",
+    "callNow": "Вызвать такси",
+    "request": "Оставить заявку",
+    "available": "На связи 24/7",
+    "order": "Заказать такси",
+    "services": "Наши услуги",
+    "servicesHeading": "Пять способов добраться до цели.",
+    "servicesIntro": "Мы знаем, что транспорт может понадобиться в любое время. Положитесь на LD Taxi — мы к вашим услугам круглосуточно, без выходных.",
+    "service1": "Индивидуальные поездки",
+    "description1": "С комфортом до места назначения — на важную деловую встречу или безопасно домой. Мы к вашим услугам.",
+    "service2": "Трансферы в аэропорт",
+    "description2": "От Вены до Зальцбурга: трансферы в главные аэропорты Австрии. Начните или завершите путешествие без лишних забот.",
+    "service3": "Шаттл-сервис",
+    "description3": "Положитесь на нас во время мероприятий: доставим вас и ваших гостей, независимо от того, участвуете вы в событии или организуете его.",
+    "service4": "Курьерская доставка",
+    "description4": "Нужно доставить посылку или документы? Воспользуйтесь нашей профессиональной курьерской службой.",
+    "service5": "Поездки для компаний",
+    "description5": "Компании могут бронировать поездки в LD Taxi и оплачивать их позже по счёту. Бронируйте заранее, чтобы ехать без лишних забот.",
+    "whyHeading": "Круглосуточно. Без объездов.",
+    "hoursText": "Транспорт может понадобиться в любое время. Поэтому мы на связи и днём, и ночью.",
+    "airports": "Вена–Зальцбург",
+    "airportsText": "Комфортные и удобные трансферы в главные аэропорты Австрии.",
+    "invoice": "Оплата по счёту",
+    "invoiceText": "Для компаний: забронируйте поездку, приезжайте вовремя и оплачивайте позже по счёту.",
+    "contactHeading": "Свяжитесь с нами.",
+    "contactText": "Позвоните нам или отправьте заявку. Мы поможем спланировать вашу следующую поездку.",
+    "contactNote": "На связи 24/7 · Такси в округе Корнойбург",
+    "name": "Имя",
+    "telephone": "Телефон",
+    "email": "Электронная почта",
+    "pickup": "Место подачи",
+    "destination": "Пункт назначения",
+    "message": "Сообщение",
+    "send": "Отправить заявку",
+    "footer": "© LD Taxi · Такси в округе Корнойбург",
+    "legal": "Информация о компании",
+    "skip": "Перейти к содержимому",
+    "homeLabel": "LD Taxi — Главная",
+    "navLabel": "Основная навигация",
+    "languageLabel": "Выберите язык",
+    "formLabel": "Заявка на поездку",
+    "formNote": "Ваша заявка отправляется через сервис FormSubmit. Поездка считается забронированной только после нашего подтверждения.",
+    "title": "LD Taxi · Такси в округе Корнойбург · 24/7",
+    "meta": "LD Taxi в округе Корнойбург: индивидуальные поездки, трансферы в аэропорт, шаттлы и курьерская доставка. Звоните круглосуточно: +43 664 7991229.",
+    "formSubject": "LD Taxi – Заявка на поездку"
   }
 };
   const storageKey = 'ldtaxi.language';
@@ -141,7 +265,7 @@
   }
   function applyLanguage(language) {
     const copy = messages[language];
-    document.documentElement.lang = language;
+    document.documentElement.lang = language === 'sr' ? 'sr-Cyrl' : language;
     const isLegalPage = document.body.dataset.page === 'legal';
     document.title = isLegalPage ? copy.legalTitle : copy.title;
     document.querySelector('meta[name="description"]').content = isLegalPage ? copy.legalMeta : copy.meta;
@@ -156,7 +280,7 @@
       button.setAttribute('aria-pressed', String(button.dataset.language === language));
     });
     const subject = document.querySelector('input[name="_subject"]');
-    if (subject) subject.value = language === 'de' ? 'LD Taxi – Fahrtanfrage' : 'LD Taxi – Ride inquiry';
+    if (subject) subject.value = copy.formSubject;
   }
   document.querySelectorAll('[data-language]').forEach(button => {
     button.addEventListener('click', () => {
