@@ -39,6 +39,8 @@
     "hoursText": "Transportbedürfnisse kennen keine Uhrzeiten. Wir auch nicht – Tag und Nacht für Sie erreichbar.",
     "airports": "Wien–Salzburg",
     "airportsText": "Flughafentransfers zu den wichtigsten Flughäfen Österreichs, komfortabel und bequem.",
+    "areaHeading": "Unterwegs im ganzen Bezirk Korneuburg",
+    "areaText": "Wir holen Sie in allen Gemeinden des Bezirks ab – unter anderem in Korneuburg, Stockerau, Langenzersdorf, Bisamberg, Leobendorf, Spillern, Hausleiten, Ernstbrunn.",
     "invoice": "Auf Rechnung",
     "invoiceText": "Für Firmen: Fahrten buchen, pünktlich ankommen und später bequem per Rechnung bezahlen.",
     "contactHeading": "Kontaktieren Sie uns.",
@@ -100,6 +102,8 @@
     "hoursText": "Transportation needs have no time constraints. Neither do we – reach us day or night.",
     "airports": "Vienna–Salzburg",
     "airportsText": "Comfortable, convenient transfers to Austria’s main airports.",
+    "areaHeading": "On the road across the Korneuburg district",
+    "areaText": "We pick you up in every municipality of the district – including Korneuburg, Stockerau, Langenzersdorf, Bisamberg, Leobendorf, Spillern, Hausleiten, Ernstbrunn.",
     "invoice": "By invoice",
     "invoiceText": "For companies: book a ride, arrive on time, and conveniently pay by invoice later.",
     "contactHeading": "Let’s plan your ride.",
@@ -161,6 +165,8 @@
     "hoursText": "Превоз вам може затребати у било које доба. Зато смо доступни и дању и ноћу.",
     "airports": "Беч–Салцбург",
     "airportsText": "Удобан и практичан превоз до најважнијих аеродрома у Аустрији.",
+    "areaHeading": "У целом округу Корнојбург",
+    "areaText": "Долазимо по вас у свим општинама округа – између осталог у местима Korneuburg, Stockerau, Langenzersdorf, Bisamberg, Leobendorf, Spillern, Hausleiten, Ernstbrunn.",
     "invoice": "По рачуну",
     "invoiceText": "За предузећа: резервишите вожњу, стигните на време и накнадно платите по рачуну.",
     "contactHeading": "Контактирајте нас.",
@@ -222,6 +228,8 @@
     "hoursText": "Транспорт может понадобиться в любое время. Поэтому мы на связи и днём, и ночью.",
     "airports": "Вена–Зальцбург",
     "airportsText": "Комфортные и удобные трансферы в главные аэропорты Австрии.",
+    "areaHeading": "По всему округу Корнойбург",
+    "areaText": "Забираем вас во всех общинах округа – в том числе в Korneuburg, Stockerau, Langenzersdorf, Bisamberg, Leobendorf, Spillern, Hausleiten, Ernstbrunn.",
     "invoice": "Оплата по счёту",
     "invoiceText": "Для компаний: забронируйте поездку, приезжайте вовремя и оплачивайте позже по счёту.",
     "contactHeading": "Свяжитесь с нами.",
@@ -249,14 +257,6 @@
 };
   const storageKey = 'ldtaxi.language';
   const supported = language => Object.hasOwn(messages, language);
-  function deviceLanguage() {
-    const preferences = navigator.languages?.length ? navigator.languages : [navigator.language || 'de'];
-    for (const locale of preferences) {
-      const language = locale.toLowerCase().split(/[-_]/)[0];
-      if (supported(language)) return language;
-    }
-    return 'de';
-  }
   function savedLanguage() {
     try {
       const language = localStorage.getItem(storageKey);
@@ -290,8 +290,7 @@
       applyLanguage(language);
     });
   });
-  window.addEventListener('languagechange', () => {
-    if (!savedLanguage()) applyLanguage(deviceLanguage());
-  });
-  applyLanguage(savedLanguage() || deviceLanguage());
+  // German is the default for everyone, including search engine crawlers; other languages only after a manual choice.
+  const saved = savedLanguage();
+  if (saved && saved !== 'de') applyLanguage(saved);
 })();
