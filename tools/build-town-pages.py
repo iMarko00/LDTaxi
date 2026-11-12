@@ -30,7 +30,7 @@ PHOTOS = {
     "rain": {"src": "/assets/img/photos/ld-taxi-passat-regen.webp", "w": 736, "h": 980,
              "alt": "Der schwarze VW Passat von LD Taxi bei Regen am Straßenrand"},
     "kreuzenstein": {"src": "/assets/img/photos/ld-taxi-passat-burg-kreuzenstein.webp", "w": 816, "h": 1088,
-                     "alt": "Schwarzer VW Passat von LD Taxi vor der Burg Kreuzenstein in Leobendorf"},
+                     "alt": "Schwarzer VW Passat von LD Taxi vor der Burg Kreuzenstein in Leobendorf", "pos": "center 22%"},
 }
 
 # Template strings per language. {n} = town name in that language.
@@ -326,7 +326,8 @@ def page(t):
     body = "".join(f'<p data-i18n="townBody{i}">{e(p)}</p>' for i, p in enumerate(t["de"]["body"]))
     dests = "".join(f'<li data-i18n="townDest{i}">{e(d)}</li>' for i, d in enumerate(t["de"]["dest"]))
     p = PHOTOS[t["photo"]]
-    photo = f'<figure class="town-photo"><img src="{p["src"]}" width="{p["w"]}" height="{p["h"]}" alt="{e(p["alt"])}" loading="eager" decoding="async"></figure>'
+    pos = f' style="object-position: {p['pos']}"' if p.get("pos") else ""
+    photo = f'<figure class="town-photo"><img src="{p["src"]}" width="{p["w"]}" height="{p["h"]}" alt="{e(p["alt"])}"{pos} loading="eager" decoding="async"></figure>'
     return f"""<!doctype html>
 <html lang="de">
 <head>
@@ -350,7 +351,7 @@ def page(t):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/redesign.css?v=20261112-3">
-<link rel="stylesheet" href="/css/town.css?v=20261112-3">
+<link rel="stylesheet" href="/css/town.css?v=20261112-4">
 <script type="application/ld+json">
 {schema(t)}
 </script>
