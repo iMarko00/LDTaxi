@@ -350,7 +350,7 @@ def page(t):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/redesign.css?v=20261112-2">
-<link rel="stylesheet" href="/css/town.css?v=20261112-2">
+<link rel="stylesheet" href="/css/town.css?v=20261112-3">
 <script type="application/ld+json">
 {schema(t)}
 </script>
