@@ -349,13 +349,13 @@ def page(t):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/redesign.css?v=20261112-2">
+<link rel="stylesheet" href="/css/redesign.css?v=20261112-3">
 <link rel="stylesheet" href="/css/town.css?v=20261112-3">
 <script type="application/ld+json">
 {schema(t)}
 </script>
 <script type="application/json" id="page-i18n">{i18n}</script>
-<script src="/js/translate.js?v=20261112-2" defer></script>
+<script src="/js/translate.js?v=20261112-3" defer></script>
 </head>
 <body class="town-page" data-page="town">
 <a class="skip-link" href="#main" data-i18n="skip">Zum Inhalt</a>
